@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+         <bean id="mathcheats" class="com.Nitesh.di_obj.Mathcheat"/>
+         
+         <bean id = "exam" class = "com.Nitesh.di_obj.Exam">
+         	<property name="stdid" value="00021" />
+         	<property name="cheat1" ref="mathcheats"/>
+         </bean> 
+         
+         <bean id="exam2" class="com.Nitesh.di_obj.Exam2">
+         	<property name="stdid2" value="0050" />
+         	<property name="cheat2" ref="mathcheats"/>
+		</bean>
+          
+</beans>        
+        
+    
+
